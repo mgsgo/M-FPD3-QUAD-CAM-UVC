@@ -1,6 +1,5 @@
 import cv2
 capture = cv2.VideoCapture(0)
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
 capture.set(cv2.CAP_PROP_FRAME_WIDTH, 7680)
 capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
