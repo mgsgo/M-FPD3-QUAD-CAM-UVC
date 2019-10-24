@@ -72,11 +72,11 @@ while True:
 		#images.remove(image_4)		#delete camera 1 images
 
 
-		cv2.imwrite('960x540_cam1_'+str(file_number).zfill(6)+'.jpg',image_1)
-		cv2.imwrite('960x540_cam2_'+str(file_number).zfill(6)+'.jpg',image_2)
-		cv2.imwrite('960x540_cam3_'+str(file_number).zfill(6)+'.jpg',image_3)
-#		cv2.imwrite('960x540_cam4_'+str(file_number).zfill(6)+'.jpg',image_4)
-		cv2.imwrite('960x540_stitchined_cam123_'+str(file_number).zfill(6)+'.jpg',stitched)
+		cv2.imwrite('960x540_'+str(file_number).zfill(6)+'_cam1.jpg',image_1)
+		cv2.imwrite('960x540_'+str(file_number).zfill(6)+'_cam2.jpg',image_2)
+		cv2.imwrite('960x540_'+str(file_number).zfill(6)+'_cam3.jpg',image_3)
+#		cv2.imwrite('960x540_'+str(file_number).zfill(6)+'_cam4.jpg',image_4)
+		cv2.imwrite('960x540_'+str(file_number).zfill(6)+'_stitchined_cam123.jpg',stitched)
 
 
 	cv2.imshow("video1", image_1)
