@@ -65,16 +65,26 @@ while True:
 			stitched = stitched[y:y + h, x:x + w]
 		
 		cv2.imshow("stitched", stitched)
+
 		images.remove(image_1)		#delete camera 1 images
 		images.remove(image_2)		#delete camera 1 images
 		images.remove(image_3)		#delete camera 1 images
 		#images.remove(image_4)		#delete camera 1 images
 
 
+		cv2.imwrite('960x540_cam1_'+str(file_number).zfill(6)+'.jpg',image_1)
+		cv2.imwrite('960x540_cam2_'+str(file_number).zfill(6)+'.jpg',image_2)
+		cv2.imwrite('960x540_cam3_'+str(file_number).zfill(6)+'.jpg',image_3)
+#		cv2.imwrite('960x540_cam4_'+str(file_number).zfill(6)+'.jpg',image_4)
+		cv2.imwrite('960x540_stitchined_cam123_'+str(file_number).zfill(6)+'.jpg',stitched)
+
+
 	cv2.imshow("video1", image_1)
 	cv2.imshow("video2", image_2)
 	cv2.imshow("video3", image_3)
 	cv2.imshow("video4", image_4)
+
+	#writer_1.write(image)
 
 	if cv2.waitKey(1) > 0: break
 
