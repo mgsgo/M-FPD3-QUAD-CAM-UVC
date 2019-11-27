@@ -1,4 +1,4 @@
-#image stitching code from https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/
+#image stitching code from https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/  
 
 import numpy as np
 import argparse

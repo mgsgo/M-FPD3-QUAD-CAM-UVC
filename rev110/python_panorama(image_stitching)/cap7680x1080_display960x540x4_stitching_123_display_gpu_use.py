@@ -1,4 +1,4 @@
-#image stitching code from https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/
+#image stitching code from https://www.pyimagesearch.com/2018/12/17/image-stitching-with-opencv-and-python/ 
 
 import numpy as np
 import argparse
@@ -15,7 +15,7 @@ image_stitch_count = 0
 stitch_crop = 0;
 
 images = []
-stitcher = cv2.createStitcher() if imutils.is_cv3() else cv2.Stitcher_create()
+stitcher = cv2.createStitcher(try_use_gpu) if imutils.is_cv3() else cv2.Stitcher_create()
 
 while True:
 	ret, frame = capture.read()
