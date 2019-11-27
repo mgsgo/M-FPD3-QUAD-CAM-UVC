@@ -31,7 +31,7 @@ while True:
 	image_4 = cv2.resize(image_4, (960-2, 540))	#last 2pixels black
 
 	file_number = file_number +1
-	file_save_en = file_number % 15
+	file_save_en = 1#file_number % 15
 	
 	if file_save_en == 1:
 		images.append(image_1)		#add camera 1 images
